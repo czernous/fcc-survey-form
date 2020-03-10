@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
+</head>
+<div class="container">
+<header class="header">
+  <h1 id="title">Enius Boutique Survey</h1>
+  <p id="description">We’re going to ask you about your experiences as a consumer. Your responses are essential for us and will be kept confidential.</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-items">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+    </div>
+    <div class="form-items">
+      <label id="email-label" for="email">E-mail</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your E-mail" required/>
+    </div>
+    <div class="form-items">
+      <label id="number-label" for="number">Age</label>
+      <input type="number" name="number" id="number" min="1" max="99" class="form-control" placeholder="Enter your age" required/>
+    </div>
+    <div class="form-items">
+      <p>What is your annual income?</p>
+      <select id="dropdown" name="income" clss="form-control" required>
+        <option disabled selected value>Select your level of income</option>
+        <option value="under20">Under $20.000</option>
+        <option value="2030">$20.000 - 30.000</option>
+        <option value="3040">$30.00 - 40.000</option>
+        <option value="over40">Over  $40.000</option>
+      </select>
+    </div>
+      <div class="form-items">
+        <p>
+          Are you the primary decision maker in your household regarding purchasing this product category?
+        </p>
+        <label>
+          <input name="desicion-maker" value="yes" type="radio" class="input-radio"/>Yes</label>
+        <label>
+        <input name="desicion-maker" value="no" type="radio" class="input-radio"/>No</label>
+      </div>
+      <div class="form-items">
+        <p>
+          How do you typically find out about brands for activewear clothing?
+          </p>
+        <label>
+          <input name="brands" type="checkbox" value="shopping-in-stores" class="input-checkbox"/>Shopping in stores</label>
+        <label>
+          <input name="brands" type="checkbox" value="tv-commercial" class="input-checkbox"/>TV commercials</label>
+        <label>
+          <input name="brands" type="checkbox" value="online-advertisments" class="input-checkbox"/>Online advertisments</label>
+        <label>
+          <input name="brands" type="checkbox" value="print-advertisments" class="input-checkbox"/>Print advertisments</label>
+        <label>
+          <input name="brands" type="checkbox" value="social-media" class="input-checkbox"/>Social media</label>
+        <label>
+          <input name="brands" type="checkbox" value="searching-on-internet" class="input-checkbox"/>Searcing on the Internet</label>
+        <label>
+          <input name="brands" type="checkbox" value="word-of-mouth" class="input-checkbox"/>Word of mouth</label>
+             
+        <p>
+         Which of the following brands have you heard of? (Select all that apply.)
+          </p>
+        <label>
+          <input name="brands" type="checkbox" value="enius-boutique" class="input-checkbox"/>Enius Boutique</label>
+        <label>
+          <input name="brands" type="checkbox" value="gymshark" class="input-checkbox"/>Gymshark</label>
+        <label>
+          <input name="brands" type="checkbox" value="lucy-locket-love" class="input-checkbox"/>Lucy Locket Love</label>
+        <label>
+          <input name="brands" type="checkbox" value="dharma-bums" class="input-checkbox"/>Dharma Bums</label>
+        <label>
+          <input name="brands" type="checkbox" value="none-of-the-above" class="input-checkbox"/>None of the above</label>
+        
+  </div>
+  <div class="form-items">
+        <p>
+          How well do current products on the market meet your needs?
+        </p>
+        <label>
+          <input name="product-needs" value="extremely-well" type="radio" class="input-radio"/>Extremely well</label>
+        <label>
+        <input name="product-needs" value="very-well" type="radio" class="input-radio"/>Very well</label>
+     <label>
+          <input name="product-needs" value="somewhat-well" type="radio" class="input-radio"/>Somewhat well</label>
+    <label>
+        <input name="product-needs" value="not-well" type="radio" class="input-radio"/>Not so well</label>
+     <label>
+          <input name="product-needs" value="not-at-all" type="radio" class="input-radio"/>Not at all well</label>
+    
+    </div>
+         <div class="form-items">
+      <p>Do you have any concerns, complaints or suggestions regarding current products on the market?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here...">
+      </textarea>
+    </div>
+
+    <div class="form-items">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+

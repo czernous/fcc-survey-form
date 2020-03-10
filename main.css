@@ -1,0 +1,92 @@
+body {
+  background:#2d7670;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(45,118,112,0.6), rgba(83,61,40,0.7)), url('https://images.pexels.com/photos/864939/pexels-photo-864939.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  color:#cd966b;
+  font-family:Arvo;
+}
+.container {
+  background:transparent;
+  margin:auto;
+  width:45vw;
+}
+@media (max-width:786px) { .container{
+  min-width:85vw;
+  margin:10% 5% 10% 5%;
+  }}
+@media (max-width:480px) { .container{
+  min-width:95vw;
+  margin:0;
+  }}
+.header {
+  text-shadow: 1px 1px 0.5px #000000;
+}
+.header h1{
+  font-weight:900;
+  text-align:center;
+  font-size: 2.7em;
+}
+#description {
+  margin:auto 1em 1em 1em;
+}
+form {
+  padding:0 3em 0 2em;
+}
+.form-items {
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  margin:1em 3em 0 3em;
+}
+@media (max-width:786px) { .form-items{
+  margin:2%;
+  padding-right:20px;
+  }}
+@media (max-width:480px) { .form-items{
+  margin:5px;
+  padding-right:20px;
+  }}
+.form-control {
+  display:block;
+    margin:1em 1em 0 0;
+  box-shadow:0;
+  font-family:inherit;
+  font-size:inherit;
+  max-width:100%;
+ 
+}
+#survey-form{
+  border-radius:10px;
+  background:rgba(29, 78, 74, 0.79);
+  padding: 1em 0 0 1em;
+  font-family:Arvo;
+  font-size:1em;
+}
+#dropdown {
+  font-family:inherit;
+  font-size:inherit;
+  max-width:100%;
+}
+input {
+  min-height:1.5em;
+  max-width:100%;
+}
+.input-textarea {
+  width:100%;
+  min-height:8em;
+  resize:vertical;
+}
+.submit-button {
+  width:100%;
+  margin-bottom:1em;
+  border-radius:5px;
+  font-family:Arvo;
+  min-height:2em;
+  font-size:1.3em;
+  color:#2d7670;
+  background:#cd966b;
+  border:0;
+}
